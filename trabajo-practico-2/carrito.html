@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DCarrito | DentalPro</title>
+</head>
+<body>
+    <header>
+        <nav aria-label=""Navegación principal>
+              <a href="index.htm">
+                <strong>DentalPro</strong>
+            </a>
+            <ul>
+                <li>
+                    <a href="index.htm">Inicio</a>
+                </li>
+                <li>
+                    <a href="productos.html">Catálogo</a>
+                </li>
+                <li>
+                    <a href="sobrenosostros.html">Sobre Nosotros</a>
+                </li>
+                <li>
+                    <a href="carrito.html">Carrito</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Carrito de compras</h1>
+        <section aria-labelledby="productos-carrito">
+            <h2 id="productos-carrito">
+                Productos seleccionados 
+
+            </h2>
+            <article>
+                <h3>Espejo bucal odontológico</h3>
+                <img src="Imagenes/espejo-bucal.webp" alt="Espejo bucal ododntológico">
+                <p>Precio unitario: $8.500</p>
+                <label for="cantidad-espejo">
+                    Cantidad:
+                </label>
+                <input 
+                type="number"
+                id="cantidad-espejo"
+                name="cantidad-espejo"
+                value="2"
+                min="1">
+            </article>
+
+            <article>
+                <h3>Guantes descartables</h3>
+                <img src="Imagenes/guantes-odontologicos.webp" alt="Guantes de latex">
+                <p>Precio unitario: $12.000</p>
+                <label for="cantidad-guantes">
+                    Cantidad:
+                </label>
+                <input
+                 type="number"
+                 id="cantidad-guantes"
+                 name="cantidad-guantes"
+                 value="1"
+                 min="1">
+            </article>
+ 
+        </section>
+        <section aria-labelledby="resumen">
+            <h2 id="resumen">
+                Resumen del pedido
+
+            </h2>
+            <p>
+                Subtotal:29.000 
+            </p>
+            <p>
+                Envío: A cordinar
+            </p>
+            <p>
+                <strong>Total: $29.000</strong>
+            </p>
+            <button type="button">
+            Confirmar pedido
+            </button>
+
+        </section>
+        <p>
+            <a href="index.htm">
+                ← Continuar comprando
+            </a>
+        </p>
+    </main>
+     
+
+  
+
+   <footer>
+            <p>
+                &copy; 2026 DentalPro.
+            </p>
+  </footer>
+</body>
+</html>

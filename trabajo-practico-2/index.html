@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Pro | Productos Odontológico</title>
+    <link rel="stylesheet" href="recursos/estilos/index.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Navegación principal">
-            <a href="index.html">Inicio
+    <header class="encabezado-principal">
+        <div  class="logo">
+            <a href="index.html">
                 <strong>Dental Pro</strong>
-            </a>
+          </a>
+        </div> 
+        <nav aria-label="Navegación principal" class="vinculo"> 
             <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
                <li>
                  <a href="productos.html">Productos</a>
                </li>
@@ -27,35 +33,40 @@
                 </li>
             </ul>
         </nav>
+        <div class="carrito">
+            <a href="/trabajo-practico-2/carrito.html" >
+                <strong>🛒</strong>
+            </a>
+        </div>
     </header>
-    <main>
-        <section aria-labelledby="titulo principal">
+    <main class="contenido-principal">
+        <section aria-labelledby="titulo principal" class="titulo-principal p,a">
             <h1 id="titulo principal">
                 Todo para tu practica odontologica
             </h1>
             <p>
                 productos e insumos odontologicos en un solo lugar.
             </p>
-            <a href="#catalogo">
+            <a href="#catalogo" class="btn-principal">
                 Ver Productos
             </a>
         </section>
         <section aria-labelledby="titulo-categorias">
-            <h2 id="titulo-categorias">
+            <h2 id="titulo-categorias" class="titulo-categorias">
                 Categorías
             </h2>
-            <ul>
-                <li>
-                    <a href="#instrumental">Instrumental</a>
+            <ul class="categorias">
+                <li class="btn-categorias">
+                    <a href="/trabajo-practico-2/productos.html">Instrumental</a>
                 </li>
-                <li>
-                    <a href="#bioseguridad">Bioseguridad</a>
+                <li class="btn-categorias">
+                    <a href="/trabajo-practico-2/productos.html">Bioseguridad</a>
                 </li>
-                <li>
-                    <a href="#descartables">Descartables</a>
+                <li class="btn-categorias">
+                    <a href="/trabajo-practico-2/productos.html">Descartables</a>
                 </li>
-                  <li>
-                    <a href="#restauracion">Restauración</a>
+                <li class="btn-categorias">
+                    <a href="/trabajo-practico-2/sobrenosostros.html">Restauración</a>
                 </li>
             </ul>
         </section>
@@ -63,55 +74,48 @@
             <h2 id="titulo-productos">
                 Productos destacados
             </h2>
-            <article>
+
+            <div class="productos-destacados">
+             <article   class="decripcion-destc">
+                <img src="recursos/Imagenes/espejo-bucal.webp" class="imagenes" alt="Espejo Bucal odontológico">
+                
                 <h3>Espejo Bucal odontológico</h3>
-                <img src="Imagenes/espejo-bucal.webp" alt="Espejo Bucal odontológico">
-                <p>
-                    Espejo bucal odontológico de acero inoxidable, ideal para la exploración de cavidad oral.
-                </p>
                 <p>
                     Precio:$8.000
                 </p>
-                <a href="productos.html">
+                <a href="productos.html" class="btn-categorias">
                     Ver Producto
                 </a>
-            </article>
-            <article>
+    
+              </article>
+              <article   class="decripcion-destc">
+                
+                <img src="recursos/Imagenes/guantes-odontologicos.webp" class="imagenes" alt="Guantes de latex Odontológicos">
                 <h3>Guantes de latex</h3>
-                <img src="Imagenes/guantes-odontologicos.webp" alt="Guantes de latex Odontológicos">
                 <p>
-                    Guantes de latex para protección durante procedimientos odontológicos.
+                    Precio:$8.000
                 </p>
-                <p>
-                    Precio:$5.000
-                </p>
-                <a href="productos.html">
+                <a href="productos.html" class="btn-categorias">
                     Ver Producto
                 </a>
-            </article>
-            <article>
+             </article>
+             <article   class="decripcion-destc">
+                
+                <img src="recursos/Imagenes/kit-explorador.webp" class="imagenes" alt="Kit de explorador bucal" >
                 <h3>Kit de exploración Bucal</h3>
-                <img src="Imagenes/kit-explorador.webp" alt="Kit de explorador bucal" >
-                <p>
-                    Kit de Exploracion bucal odontologico
-                </p>
                 <p>
                     Precio: $8.000
                 </p>
-                <a href="productos.html">
+                <a href="productos.html" class="btn-categorias">
                     Ver Producto
                 </a>
-            </article>
-
-
+             </article>
+            </div>
         </section>
     </main>
         
-    <footer>
-        <p>
-            &copy; 2026 Dental Pro. Todos los derechos reservados.
-        </p>
-        <nav>
+    <footer class="pie-principal">
+        <nav class="vinculo-pie">
             <a href="sobrenosostros.html">
                 Sobre Nosotros
             </a>
@@ -119,7 +123,9 @@
                 Contacto
             </a>
         </nav>
-
+       <p>
+            &copy; 2026 Dental Pro. Todos los derechos reservados.
+        </p>
     </footer>
 </body>
 </html>

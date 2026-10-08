@@ -4,40 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Espejo bucal odontológico- DentalPro"> 
-    <title>Espejo Bucal | DentalPro</title>
+    <title>Productos | DentalPro</title>
+    <link rel="stylesheet" href="/trabajo-practico-2/recursos/estilos/index.css">
 </head>
 <body>
-    <header>
-        <nav aria-label="Navegación Principal">
-
+    <header class="encabezado-principal">
+        <div  class="logo">
             <a href="index.html">
-                <strong>DentalPro</strong>
-            </a>
+                <strong>Dental Pro</strong>
+          </a>
+        </div> 
+        <nav aria-label="Navegación principal" class="vinculo"> 
             <ul>
                 <li>
                     <a href="index.html">Inicio</a>
                 </li>
+               <li>
+                 <a href="productos.html">Productos</a>
+               </li>
+               <li>
+                 <a href="productos.html">Catálogo</a>
+               </li>
+               <li>
+                  <a href="sobrenosostros.html">Sobre Nosotros                    
+                  </a>
+               </li>
                 <li>
-                    <a href="productos.html">Catálogo</a>
-                </li>
-                <li>
-                    <a href="sobrenosostros.html">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="carrito.html">Carrito</a>
+                    <a href="contacto.html">Contacto</a>
                 </li>
             </ul>
         </nav>
+        <div class="carrito">
+            <a href="/trabajo-practico-2/carrito.html" >
+                <strong>🛒</strong>
+            </a>
+        </div>
     </header>
       <main>
-            <h1>Espejo bucal odontologico</h1>
-            <img src="Imagenes/espejo-bucal.webp" alt="Espejo bucal Odontológico">
+            <div class="contenido-productos">
+                <h1>Productos</h1>
+                <h2>Espejo bucal odontologico</h2>
+             <img src="recursos/Imagenes/espejo-bucal.webp" alt="Espejo bucal Odontológico">
              <p>Espejo bucal profesional fabricado en acero inoxidable,
                 diseñado para uso odontológico. </p>
                 <p>
-                    Precio:$4.000
+                    Precio:$8.000
                 </p>
-                <section aria-labelledby="caracteristicas">
+           
+               <section aria-labelledby="caracteristicas">
                  <h2 id="caracteristicas" >
                     Caracteristicas
                  </h2>
@@ -46,8 +60,7 @@
                     <li>Apto para esterilizacion</li>
                     <li>Uso odontologico profecional</li>
                  </ul>
-                </section>
-                
+                </section>  
            <form action="carrito.html" method="get">
  
                 <label for="cantidad">
@@ -66,8 +79,105 @@
                 </button>
 
            </form>
+            </div>  
+           <div class="contenido-productos">
+            <h2>Barbijo Odontológico</h2>
+            <img src="/trabajo-practico-2/recursos/Imagenes/barbijo.webp" alt="Barbijo">
+            <p>Barbijo / Mascarilla Odontológica Tricapa con Elástico y Filter BFE - Alta Protección (Pack x 50 u.)</p>
+            <p>$30.000</p>
+           
+           <section aria-labelledby="caracteristicas">
+            <h2 id="caracteristicas">Caracteristicas</h2>
+            <ul>
+                <li>Capa externa: Hidrófuga, repele salpicaduras de líquidos y fluidos corporales.</li>
+               <li>Capa intermedia (Filtro Meltblown): Alta eficiencia de filtración bacteriana (BFE > 95%) y de partículas (PFE).</li>
+               <li>Capa interna: Suave, hipoalergénica y libre de látex, ideal para pieles sensibles, absorbiendo la humedad de la respiración sin irritar.</li>
+            </ul>
+           </section>
+             <form action="carrito.html" method="get">
+ 
+                <label for="cantidad">
+                    Cantidad:
+                </label>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    value="1"
+                    min="1">
+
+                <button type="submit">
+                    Agregar al carrito
+                </button>
+
+           </form>
+           </div>
+           <div class="contenido-productos">
+            <h2>Guantes odontologico</h2>
+            <img src="/trabajo-practico-2/recursos/Imagenes/guantes-odontologicos.webp" alt="Guantes de latex">
+            <p>Guantes de Examinación (Látex / Nitrilo) - Alta Sensibilidad y Protección Profesional</p>
+            <p>$8000</p>
+           <section aria-labelledby="caracteristicas">
+            <h2 id="caracteristicas">Caracteristicas</h2>
+            <ul>
+                <li>Resistencia y Elasticidad Superior.</li>
+               <li>Superficie Texturizada: Cuenta con micropoliclínico o textura en la zona de los dedos para un agarre firme y seguro.</li>
+               <li>Ajuste Confortable y Anatómico: Se adaptan perfectamente a la forma de la mano, reduciendo la fatiga muscular durante largas jornadas de trabajo clínico.</li>
+            </ul>
+           </section>
+             <form action="carrito.html" method="get">
+ 
+                <label for="cantidad">
+                    Cantidad:
+                </label>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    value="1"
+                    min="1">
+
+                <button type="submit">
+                    Agregar al carrito
+                </button>
+           </form>
+            </div>
+           <div class="contenido-productos">
+            <h2>Kit Odontológico</h2>
+            <img src="/trabajo-practico-2/recursos/Imagenes/kit-explorador.webp" alt="Kit Odontológico">
+            <p>Kit Odontológico Descartable Estéril / Pack de Examinación</p>
+            <p>$8000</p>
+           
+           <section aria-labelledby="caracteristicas">
+            <h2 id="caracteristicas">Caracteristicas</h2>
+            <ul>
+                <li>Solución Todo en Uno</li>
+               <li>Máxima Bioseguridad</li>
+               <li>Comodidad y Ergonomía</li>
+            </ul>
+           </section>
+             <form action="carrito.html" method="get">
+ 
+                <label for="cantidad">
+                    Cantidad:
+                </label>
+
+                <input
+                    type="number"
+                    id="cantidad"
+                    name="cantidad"
+                    value="1"
+                    min="1">
+
+                <button type="submit">
+                    Agregar al carrito
+                </button>
+           </form>
+           </div>
         </main>
-        <footer>
+        <footer class="pie-principal">
             <p>
                 &copy; 2026 DentalPro.
             </p>

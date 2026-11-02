@@ -1,0 +1,79 @@
+const productos = [
+  {
+    id: 1,
+    nombre: "Espejo bucal odontologico",
+    imagen: "recursos/Imagenes/espejo-bucal.webp",
+    altImagen: "Espejo bucal Odontológico",
+    descripcion: "Espejo bucal profesional fabricado en acero inoxidable, diseñado para uso odontológico.",
+    precio: 8000,
+    caracteristicas: [
+      "Fabricado de acero inoxidable",
+      "Apto para esterilizacion",
+      "Uso odontologico profecional"
+    ],
+    formulario: {
+      action: "carrito.html",
+      method: "get",
+      cantidadMinima: 1,
+      cantidadInicial: 1
+    }
+  },
+  {
+    id: 2,
+    nombre: "Barbijo Odontológico",
+    imagen: "./recursos/Imagenes/barbijo.webp",
+    altImagen: "Barbijo",
+    descripcion: "Barbijo / Mascarilla Odontológica Tricapa con Elástico y Filter BFE - Alta Protección (Pack x 50 u.)",
+    precio: 30000,
+    caracteristicas: [
+      "Capa externa: Hidrófuga, repele salpicaduras de líquidos y fluidos corporales.",
+      "Capa intermedia (Filtro Meltblown): Alta eficiencia de filtración bacteriana (BFE > 95%) y de partículas (PFE).",
+      "Capa interna: Suave, hipoalergénica y libre de látex, ideal para pieles sensibles, absorbiendo la humedad de la respiración sin irritar."
+    ],
+    formulario: {
+      action: "carrito.html",
+      method: "get",
+      cantidadMinima: 1,
+      cantidadInicial: 1
+    }
+  },
+  {
+    id: 3,
+    nombre: "Guantes odontologico",
+    imagen: "./recursos/Imagenes/guantes-odontologicos.webp",
+    altImagen: "Guantes de latex",
+    descripcion: "Guantes de Examinación (Látex / Nitrilo) - Alta Sensibilidad y Protección Profesional",
+    precio: 8000,
+    caracteristicas: [
+      "Resistencia y Elasticidad Superior.",
+      "Superficie Texturizada: Cuenta con micropoliclínico o textura en la zona de los dedos para un agarre firme y seguro.",
+      "Ajuste Confortable y Anatómico: Se adaptan perfectamente a la forma de la mano, reduciendo la fatiga muscular durante largas jornadas de trabajo clínico."
+    ],
+    formulario: {
+      action: "carrito.html",
+      method: "get",
+      cantidadMinima: 1,
+      cantidadInicial: 1
+    }
+  },
+  {
+    id: 4,
+    nombre: "Kit Odontológico",
+    imagen: "./recursos/Imagenes/kit-explorador.webp",
+    altImagen: "Kit Odontológico",
+    descripcion: "Kit Odontológico Descartable Estéril / Pack de Examinación",
+    precio: 8000,
+    caracteristicas: [
+      "Solución Todo en Uno",
+      "Máxima Bioseguridad",
+      "Comodidad y Ergonomía"
+    ],
+    formulario: {
+      action: "carrito.html",
+      method: "get",
+      cantidadMinima: 1,
+      cantidadInicial: 1
+    }
+  }
+];
+export{productos}

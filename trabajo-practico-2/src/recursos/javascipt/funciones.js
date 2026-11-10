@@ -1,3 +1,4 @@
+
 function renderizacionProductos(contenedor, productos) {
     if (!contenedor) return;
     let productosHTML ="";
@@ -7,12 +8,13 @@ function renderizacionProductos(contenedor, productos) {
            <div class="contenido-productos">
             <h2>${elementos.nombre}</h2>
             <img src="${elementos.imagen}" alt="${elementos.altImagen}">
-            <p>${elementos.descripcion}</p>
+            <p> ${elementos.descripcion}</p>
             <p>${elementos.precio}</p>
            <section aria-labelledby="caracteristicas">
-            <h2 id=${elementos.id}</h2>
+            <h2 id=${elementos.id}></h2>
             <ul>
-                <li>${elementos.caracteristicas}</li>
+              <li class="descripcionProductos">${elementos.caracteristicas}</li>
+              </ul>
            </section>
              <form action="carrito.html" method="get">
  

@@ -1,14 +1,14 @@
 *{
     box-sizing: border-box;
 }
-html,body,h1,h2,h3,p{
-    margin: 0px;
-    padding: 0px;
+html, body {
+    margin: 0;
+    padding: 0;
     height: 100%;
 }
 @font-face {
     font-family:Poppins ;
-    src: url(/trabajo-practico-2/recursos/estilos/fuentes/Poppins-Regular.ttf);
+    src: url(./fuentes/Poppins-Medium.ttf);
 }
 html{
     font-family: Poppins, Verdana, Geneva, Tahoma, sans-serif;
@@ -130,11 +130,16 @@ html{
     flex-direction: column;
     background-color: #b8d0ea;
 }
+.contenido-productos .descripcionProductos{
+    font-size: 16px; 
+  width: 100%;    
+  text-align: center;
+}
 .contenido-productos button[type = "submit"]{
     background-color: #0d6efd;
     color: white;
     border: none;
-    padding: 12px 20px;
+    padding: 12px 12px;
     border-radius: 6px;
     font-size: 1rem;
     font-weight: bold;
@@ -237,13 +242,13 @@ html{
 }
 .section-productos{
     background-color: lightblue;
-    padding: 25;
+    padding: 25px;
     border-radius: 8px;
     flex: 2;
 }
 .section-resumen{
     background-color: lightblue;
-    padding: 25;
+    padding: 25px;
     border-radius: 8px;
     flex: 1;
 }

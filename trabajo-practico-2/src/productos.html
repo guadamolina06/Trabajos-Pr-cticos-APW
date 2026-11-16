@@ -6,7 +6,7 @@
     <meta name="description" content="Espejo bucal odontológico- DentalPro"> 
     <title>Productos | DentalPro</title>
     <link rel="stylesheet" href="./recursos/estilos/index.css">
-    <script type="module" src="./recursos/javascipt/index.js"></script>
+    <script type="module" src="./recursos/javascript/index.js"></script>
 </head>
 <body>
     <header class="encabezado-principal">
@@ -24,9 +24,6 @@
                  <a href="productos.html">Productos</a>
                </li>
                <li>
-                 <a href="productos.html">Catálogo</a>
-               </li>
-               <li>
                   <a href="sobrenosostros.html">Sobre Nosotros                    
                   </a>
                </li>
@@ -41,53 +38,15 @@
             </a>
         </div>
     </header>
-      <main>
-            <div class="contenido-productos" id="catalogo1">
-                <h1>Productos</h1>
-                <h2>Espejo bucal odontologico</h2>
-             <img src="recursos/Imagenes/espejo-bucal.webp" alt="Espejo bucal Odontológico">
-             <p>Espejo bucal profesional fabricado en acero inoxidable,
-                diseñado para uso odontológico. </p>
-                <p>
-                    Precio:$8.000
-                </p>
-           
-               <section aria-labelledby="caracteristicas">
-                 <h2 id="caracteristicas" >
-                    Caracteristicas
-                 </h2>
-                 <ul>
-                    <li>Fabricado de acero inoxidable</li>
-                    <li>Apto para esterilizacion</li>
-                    <li>Uso odontologico profecional</li>
-                 </ul>
-                </section>  
-           <form action="carrito.html" method="get">
- 
-                <label for="cantidad">
-                    Cantidad:
-                </label>
-
-                <input
-                    type="number"
-                    id="cantidad"
-                    name="cantidad"
-                    value="1"
-                    min="1">
-
-                <button type="submit">
-                    Agregar al carrito
-                </button>
-
-           </form>
-            </div>  
-           
-        </main>
-        <footer class="pie-principal">
+    <main>
+       <h1>Productos</h1>
+       <div id="catalogo1" class="catalogo"></div>
+    </main>  
+    <footer class="pie-principal">
             <p>
-                &copy; 2026 DentalPro.
+              &copy; 2026 DentalPro.
             </p>
-        </footer>
+    </footer>
     
 </body>
 </html>

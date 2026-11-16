@@ -2,77 +2,113 @@
   {
     "id": 1,
     "nombre": "Espejo bucal odontológico",
+    "categoria": "Instrumental",
     "imagen": "./recursos/Imagenes/espejo-bucal.webp",
-    "altImagen": "Espejo bucal Odontológico",
+    "altImagen": "Espejo bucal odontológico",
     "descripcion": "Espejo bucal profesional fabricado en acero inoxidable, diseñado para uso odontológico.",
     "precio": 8000,
     "caracteristicas": [
       "Fabricado de acero inoxidable",
       "Apto para esterilización",
       "Uso odontológico profesional"
-    ],
-    "formulario": {
-      "action": "carrito.html",
-      "method": "get",
-      "cantidadMinima": 1,
-      "cantidadInicial": 1
-    }
+    ]
   },
   {
     "id": 2,
-    "nombre": "Barbijo Odontológico",
+    "nombre": "Barbijo odontológico",
+    "categoria": "Bioseguridad",
     "imagen": "./recursos/Imagenes/barbijo.webp",
-    "altImagen": "Barbijo",
-    "descripcion": "Barbijo / Mascarilla Odontológica Tricapa con Elástico y Filter BFE - Alta Protección (Pack x 50 u.)",
+    "altImagen": "Barbijo tricapa",
+    "descripcion": "Barbijo tricapa con elástico y filtro BFE de alta protección (pack x 50 u.).",
     "precio": 30000,
     "caracteristicas": [
-      "Capa externa: Hidrófuga, repele salpicaduras de líquidos y fluidos corporales.",
-      "Capa intermedia (Filtro Meltblown): Alta eficiencia de filtración bacteriana (BFE > 95%) y de partículas (PFE).",
-      "Capa interna: Suave, hipoalergénica y libre de látex, ideal para pieles sensibles, absorbiendo la humedad de la respiración sin irritar."
-    ],
-    "formulario": {
-      "action": "carrito.html",
-      "method": "get",
-      "cantidadMinima": 1,
-      "cantidadInicial": 1
-    }
+      "Capa externa hidrófuga que repele salpicaduras",
+      "Filtro meltblown con eficiencia bacteriana mayor al 95%",
+      "Capa interna hipoalergénica y libre de látex"
+    ]
   },
   {
     "id": 3,
     "nombre": "Guantes odontológicos",
+    "categoria": "Bioseguridad",
     "imagen": "./recursos/Imagenes/guantes-odontologicos.webp",
     "altImagen": "Guantes de látex",
-    "descripcion": "Guantes de Examinación (Látex / Nitrilo) - Alta Sensibilidad y Protección Profesional",
-    "precio": 8000,
+    "descripcion": "Guantes de examinación de látex o nitrilo, de alta sensibilidad y protección profesional.",
+    "precio": 12000,
     "caracteristicas": [
-      "Resistencia y Elasticidad Superior.",
-      "Superficie Texturizada: Cuenta con microtextura en la zona de los dedos para un agarre firme y seguro.",
-      "Ajuste Confortable y Anatómico: Se adaptan perfectamente a la forma de la mano, reduciendo la fatiga muscular durante largas jornadas de trabajo clínico."
-    ],
-    "formulario": {
-      "action": "carrito.html",
-      "method": "get",
-      "cantidadMinima": 1,
-      "cantidadInicial": 1
-    }
+      "Resistencia y elasticidad superior",
+      "Microtextura en los dedos para un agarre firme",
+      "Ajuste anatómico que reduce la fatiga"
+    ]
   },
   {
     "id": 4,
-    "nombre": "Kit Odontológico",
+    "nombre": "Kit odontológico descartable",
+    "categoria": "Descartables",
     "imagen": "./recursos/Imagenes/kit-explorador.webp",
-    "altImagen": "Kit Odontológico",
-    "descripcion": "Kit Odontológico Descartable Estéril / Pack de Examinación",
+    "altImagen": "Kit odontológico descartable",
+    "descripcion": "Kit descartable estéril de examinación con espejo, explorador y pinza.",
     "precio": 8000,
     "caracteristicas": [
-      "Solución Todo en Uno",
-      "Máxima Bioseguridad",
-      "Comodidad y Ergonomía"
-    ],
-    "formulario": {
-      "action": "carrito.html",
-      "method": "get",
-      "cantidadMinima": 1,
-      "cantidadInicial": 1
-    }
+      "Solución todo en uno",
+      "Máxima bioseguridad",
+      "Comodidad y ergonomía"
+    ]
+  },
+  {
+    "id": 5,
+    "nombre": "Pinza algodonera",
+    "categoria": "Instrumental",
+    "imagen": "./recursos/Imagenes/pinza-algodonera.webp",
+    "altImagen": "Pinza algodonera de acero inoxidable",
+    "descripcion": "Pinza algodonera de acero inoxidable para manipular algodón y materiales en boca.",
+    "precio": 9500,
+    "caracteristicas": [
+      "Acero inoxidable quirúrgico",
+      "Puntas estriadas para mejor agarre",
+      "Autoclavable"
+    ]
+  },
+  {
+    "id": 6,
+    "nombre": "Eyectores de saliva",
+    "categoria": "Descartables",
+    "imagen": "./recursos/Imagenes/eyectores.webp",
+    "altImagen": "Eyectores de saliva descartables",
+    "descripcion": "Eyectores de saliva descartables y flexibles (pack x 100 u.).",
+    "precio": 6500,
+    "caracteristicas": [
+      "Moldeables, mantienen la forma",
+      "Punta suave que no lastima los tejidos",
+      "Uso único"
+    ]
+  },
+  {
+    "id": 7,
+    "nombre": "Resina compuesta",
+    "categoria": "Restauración",
+    "imagen": "./recursos/Imagenes/resinas.webp",
+    "altImagen": "Jeringa de resina compuesta",
+    "descripcion": "Resina compuesta fotopolimerizable para restauraciones estéticas (jeringa de 4 g).",
+    "precio": 25000,
+    "caracteristicas": [
+      "Alta resistencia al desgaste",
+      "Pulido brillante y duradero",
+      "Disponible en varios tonos"
+    ]
+  },
+  {
+    "id": 8,
+    "nombre": "Ionómero vítreo",
+    "categoria": "Restauración",
+    "imagen": "./recursos/Imagenes/ionomero.webp",
+    "altImagen": "Ionómero vítreo de restauración",
+    "descripcion": "Ionómero vítreo de restauración con liberación de flúor.",
+    "precio": 22000,
+    "caracteristicas": [
+      "Liberación de flúor",
+      "Adhesión química al diente",
+      "Ideal para odontopediatría"
+    ]
   }
 ]

@@ -1,1 +1,0 @@
-export const URL_PRODUCTOS = "./recursos/json/productos.json"

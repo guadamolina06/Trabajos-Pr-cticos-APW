@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrito | DentalPro</title>
     <link rel="stylesheet" href="./recursos/estilos/index.css">
+    <script type="module" src="./recursos/javascript/paginaCarrito.js"></script>
 </head>
 <body>
      <header class="encabezado-principal">
@@ -40,64 +41,25 @@
     <main>
         <h1>Carrito de compras</h1>
         <div class="contenido-carrito">
-        <section class="section-productos" aria-labelledby="productos-carrito">
-            <h2 id="productos-carrito">
-                Productos seleccionados 
+                <section class="section-productos" aria-labelledby="productos-carrito">
+                 <h2 id="productos-carrito">Productos seleccionados</h2>
+                 <div id="listaCarrito">
+                 </div>
+                </section>
 
-            </h2>
-            <article>
-                <h3>Espejo bucal odontológico</h3>
-                <img class="imagen-carrito" src= "./recursos/Imagenes/espejo-bucal.webp" alt="Espejo bucal ododntológico">
-                <p>Precio unitario: $8.500</p>
-                <label for="cantidad-espejo">
-                    Cantidad:
-                </label>
-                <input 
-                type="number"
-                id="cantidad-espejo"
-                name="cantidad-espejo"
-                value="2"
-                min="1">
-            </article>
-
-            <article>
-                <h3>Guantes descartables</h3>
-                <img class="imagen-carrito" src="./recursos/Imagenes/guantes-odontologicos.webp" alt="Guantes de latex">
-                <p>Precio unitario: $12.000</p>
-                <label for="cantidad-guantes">
-                    Cantidad:
-                </label>
-                <input
-                 type="number"
-                 id="cantidad-guantes"
-                 name="cantidad-guantes"
-                 value="1"
-                 min="1">
-            </article>
-        </section>
-        <section class="section-resumen" aria-labelledby="resumen">
-            <h2 id="resumen">
-                Resumen del pedido
-
-            </h2>
-            <p>
-                Subtotal:29.000 
-            </p>
-            <p>
-                Envío: A cordinar
-            </p>
-            <p>
-                <strong>Total: $29.000</strong>
-            </p>
-            <button type="button">
-            Confirmar pedido
-            </button>
-        </section>
+                <section class="section-resumen" aria-labelledby="resumen">
+                 <h2 id="resumen">Resumen del pedido</h2>
+                 <p>Unidades: <span id="unidadesCarrito">0</span>
+                 </p>
+                 <p>Envío: a coordinar</p>
+                 <p><strong>Total: <span id="totalCarrito">$0</span></strong></p>
+                 <button type="button" id="btnConfirmar">Confirmar pedido</button>
+                 <button type="button" id="btnVaciar" class="btn-secundario">Vaciar carrito</button>
+                </section>
         </div>
+
         <p class="btn-carrito">
-            <a href="index.html">
-                ← Continuar comprando
-            </a>
+            <a href="productos.html">← Continuar comprando</a>
         </p>
     </main>
    <footer class="pie-principal">

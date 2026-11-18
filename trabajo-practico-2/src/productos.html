@@ -39,8 +39,27 @@
         </div>
     </header>
     <main>
-       <h1>Productos</h1>
+         <h1>Productos</h1>
+
+     <section class="filtros" aria-label="Filtros del catálogo">
+          <div class="buscador">
+             <label for="buscador">Buscar producto:</label>
+             <input type="search" id="buscador" placeholder="Ej: guantes">
+          </div>
+
+         <div class="botones-filtro">
+             <button type="button" class="btn-filtro" data-categoria="Todas">Todas</button>
+             <button type="button" class="btn-filtro" data-categoria="Instrumental">Instrumental</button>
+             <button type="button" class="btn-filtro" data-categoria="Bioseguridad">Bioseguridad</button>
+             <button type="button" class="btn-filtro" data-categoria="Descartables">Descartables</button>
+             <button type="button" class="btn-filtro" data-categoria="Restauración">Restauración</button>
+         </div>
+     </section>
+
+      <p id="resultadoFiltro" class="resultado-filtro" aria-live="polite"></p>
+
        <div id="catalogo1" class="catalogo"></div>
+
     </main>  
     <footer class="pie-principal">
             <p>

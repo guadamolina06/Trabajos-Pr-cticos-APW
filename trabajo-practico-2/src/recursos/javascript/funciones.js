@@ -21,10 +21,10 @@ function renderizacionProductos(contenedor, productos) {
           <h3 id="caracteristicas-${producto.id}">Características</h3>
           <ul>${listaCaracteristicas}</ul>
         </section>
-        <form>
+        <form class="form-agregar" data-id="${producto.id}">
           <label for="cantidad-${producto.id}">Cantidad:</label>
-          <input type="number" id="cantidad-${producto.id}" name="cantidad" value="1" min="1">
-          <button type="submit" data-id="${producto.id}">Agregar al carrito</button>
+          <input type="number" id="cantidad-${producto.id}" name="cantidad" value="1" min="1" required>
+          <button type="submit">Agregar al carrito</button>
         </form>
       </article>
     `;
@@ -52,5 +52,16 @@ function mostrarError(contenedor, mensaje) {
   if (!contenedor) return;
   contenedor.innerHTML = `<p class="mensaje-error">${mensaje}</p>`;
 }
+function mostrarNotificacion(mensaje, tipo = "exito") {
+  const aviso = document.createElement("div");
+  aviso.className = `notificacion notificacion-${tipo}`;
+  aviso.setAttribute("role", "status");
+  aviso.textContent = mensaje;
+  document.body.appendChild(aviso);
 
-export { renderizacionProductos, indiceProductos, mostrarError, formatearPrecio };
+  setTimeout(() => {
+    aviso.remove();
+  }, 3000);
+}
+
+export { renderizacionProductos, indiceProductos, mostrarError, formatearPrecio, mostrarNotificacion };

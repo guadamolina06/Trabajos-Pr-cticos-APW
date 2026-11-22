@@ -22,7 +22,7 @@
                <li>
                  <a href="productos.html">Productos</a>
                </li>
-               <li>      
+                 
                <li>
                   <a href="sobrenosostros.html">Sobre Nosotros                    
                   </a>
@@ -53,8 +53,13 @@
                  </p>
                  <p>Envío: a coordinar</p>
                  <p><strong>Total: <span id="totalCarrito">$0</span></strong></p>
-                 <button type="button" id="btnConfirmar">Confirmar pedido</button>
-                 <button type="button" id="btnVaciar" class="btn-secundario">Vaciar carrito</button>
+                 <form id="formPedido">
+                    <label for="nombreCliente">Tu nombre:</label>
+                    <input type="text" id="nombreCliente" name="nombreCliente" required minlength="3"
+                    placeholder="Ej: Sofía Martínez">
+                    <button type="submit" id="btnConfirmar">Confirmar pedido por WhatsApp</button>
+                 </form>
+                    <button type="button" id="btnVaciar" class="btn-secundario">Vaciar carrito</button>
                 </section>
         </div>
 

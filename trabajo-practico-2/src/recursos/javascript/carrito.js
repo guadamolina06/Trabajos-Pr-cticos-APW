@@ -1,3 +1,4 @@
+import { formatearPrecio } from "./funciones.js";
 function agregarProducto(carrito, producto, cantidad) {
   const yaEsta = carrito.find(item => item.id === producto.id);
 
@@ -38,5 +39,19 @@ function calcularTotal(carrito) {
 function contarUnidades(carrito) {
   return carrito.reduce((total, item) => total + item.cantidad, 0);
 }
+function armarMensajePedido(carrito, nombre) {
+  const lineas = carrito.map(item =>
+    `• ${item.cantidad} × ${item.nombre} — ${formatearPrecio(item.precio * item.cantidad)}`
+  );
 
-export { agregarProducto, actualizarCantidad, eliminarProducto, calcularTotal, contarUnidades };
+  return [
+    `¡Hola DentalPro! Soy ${nombre} y quiero hacer este pedido:`,
+    "",
+    ...lineas,
+    "",
+    `Total: ${formatearPrecio(calcularTotal(carrito))}`,
+    "Envío: a coordinar"
+  ].join("\n");
+}
+
+export { agregarProducto, actualizarCantidad, eliminarProducto, calcularTotal, contarUnidades, armarMensajePedido };

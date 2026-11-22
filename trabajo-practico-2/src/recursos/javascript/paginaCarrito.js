@@ -1,5 +1,5 @@
-import { obtenerCarrito, guardarCarrito } from "./almacenamiento.js";
-import { actualizarCantidad, eliminarProducto, calcularTotal, contarUnidades } from "./carrito.js";
+import { actualizarCantidad, eliminarProducto, calcularTotal, contarUnidades, armarMensajePedido } from "./carrito.js";
+import { NUMERO_WHATSAPP } from "./config.js";
 import { formatearPrecio, mostrarNotificacion } from "./funciones.js";
 
 const listaCarrito = document.getElementById("listaCarrito");
@@ -7,8 +7,34 @@ const totalCarrito = document.getElementById("totalCarrito");
 const unidadesCarrito = document.getElementById("unidadesCarrito");
 const btnVaciar = document.getElementById("btnVaciar");
 const btnConfirmar = document.getElementById("btnConfirmar");
+const formPedido = document.getElementById("formPedido");
+const inputNombre = document.getElementById("nombreCliente");
 
 let carrito = obtenerCarrito();
+formPedido.addEventListener("submit", (evento) => {
+  evento.preventDefault();
+
+  const nombre = inputNombre.value.trim();
+
+  if (nombre.length < 3) {
+    mostrarNotificacion("Ingresá tu nombre (mínimo 3 letras).", "error");
+    inputNombre.focus();
+    return;
+  }
+
+  if (carrito.length === 0) {
+    mostrarNotificacion("Tu carrito está vacío.", "error");
+    return;
+  }
+
+  const mensaje = armarMensajePedido(carrito, nombre);
+  const url = `https://wa.me/${NUMERO_WHATSAPP}?text=${encodeURIComponent(mensaje)}`;
+  window.open(url, "_blank");
+
+  mostrarNotificacion(`¡Gracias, ${nombre}! Tu pedido se abrió en WhatsApp para enviarlo.`);
+  actualizarCarrito([]);
+  formPedido.reset();
+});
 
 function renderizarCarrito() {
   if (carrito.length === 0) {
